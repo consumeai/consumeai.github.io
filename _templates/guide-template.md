@@ -17,7 +17,7 @@ date: 2026-10-24
 ## Why it matters for your business
 The time/money angle. Who should care and who shouldn't.
 
-## The recipe (setup)
+## Setup, step by step
 1. Step with exact clicks.
 2. ...
 3. ...
