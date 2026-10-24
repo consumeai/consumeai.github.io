@@ -1,7 +1,7 @@
 ---
 title: "<Tool> does <job> in <time>"
 keyword: SETUP            # the comment keyword (caps)
-verdict: consume          # consume | skip | snack
+verdict: consume          # consume | skip | try
 tool: "<Tool name>"
 summary: "One sentence: what it does for a business, in hours or money."
 saves: "~5 h/week"
@@ -26,4 +26,4 @@ The time/money angle. Who should care and who shouldn't.
 What we did, what came out, what went wrong. Say "the docs claim" when we have not tested it ourselves.
 
 ## Verdict
-CONSUME / SKIP / SNACK + one line in the food-critic tone.
+CONSUME / SKIP / TRY + one dry, funny line.

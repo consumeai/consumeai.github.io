@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="guide">
   <div class="ghead">
-    <span class="pill {{ page.verdict | slice: 0 }}">{{ page.verdict | upcase }}</span>
+    <span class="pill {% if page.verdict == "try" %}n{% else %}{{ page.verdict | slice: 0 }}{% endif %}">{{ page.verdict | upcase }}</span>
     <h1>{{ page.title }}</h1>
     <p class="sum">{{ page.summary }}</p>
     <dl class="facts">

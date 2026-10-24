@@ -14,5 +14,5 @@ layout: default
   <h2>Guides</h2>
   {% assign gs = site.guides | sort: "date" | reverse %}
   {% if gs.size == 0 %}<p class="empty">First guides drop this week.</p>{% endif %}
-  <ul>{% for g in gs %}<li><a href="{{ g.url }}"><span class="pill {{ g.verdict | slice: 0 }}">{{ g.verdict | upcase }}</span><span class="t">{{ g.title }}</span><span class="k">{{ g.keyword }}</span></a></li>{% endfor %}</ul>
+  <ul>{% for g in gs %}<li><a href="{{ g.url }}"><span class="pill {% if g.verdict == "try" %}n{% else %}{{ g.verdict | slice: 0 }}{% endif %}">{{ g.verdict | upcase }}</span><span class="t">{{ g.title }}</span><span class="k">{{ g.keyword }}</span></a></li>{% endfor %}</ul>
 </section>
