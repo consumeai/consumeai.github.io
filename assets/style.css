@@ -4,7 +4,7 @@ body{margin:0;background:var(--black);color:var(--off);font:17px/1.6 'Space Grot
 a{color:var(--lime)}
 .top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;max-width:960px;margin:auto}
 .brand{display:flex;align-items:center;gap:10px;font:900 20px Unbounded,sans-serif;color:var(--off);text-decoration:none}
-.brand img{border-radius:50%}.brand span{color:var(--lime)}
+.brand b{font-weight:900}.brand img{border-radius:50%}.brand span{color:var(--lime)}
 .ig{font-size:15px;text-decoration:none}
 .hero{display:grid;grid-template-columns:1fr 1fr;max-width:960px;margin:12px auto 0;border-radius:20px;overflow:hidden}
 .hero .l{background:var(--lime);color:var(--black);padding:48px 32px}
