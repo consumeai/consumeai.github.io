@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="guide">
+  <div class="ghead">
+    <span class="pill {{ page.verdict | slice: 0 }}">{{ page.verdict | upcase }}</span>
+    <h1>{{ page.title }}</h1>
+    <p class="sum">{{ page.summary }}</p>
+    <dl class="facts">
+      {% if page.saves %}<div><dt>Saves</dt><dd>{{ page.saves }}</dd></div>{% endif %}
+      {% if page.cost %}<div><dt>Costs</dt><dd>{{ page.cost }}</dd></div>{% endif %}
+      {% if page.setup_time %}<div><dt>Setup</dt><dd>{{ page.setup_time }}</dd></div>{% endif %}
+    </dl>
+    {% if page.official_link %}<a class="btn" href="{{ page.official_link }}">Get {{ page.tool | default: "the tool" }} (official link) ↗</a>{% endif %}
+  </div>
+  <div class="body">{{ content }}</div>
+  <aside class="more"><p>Hungry for more? Every reel on <a href="{{ site.instagram }}">@consume.ai</a> has a keyword. Comment it, get the recipe.</p><a href="/">All recipes →</a></aside>
+</article>

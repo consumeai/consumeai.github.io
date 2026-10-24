@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}consume.ai</title>
+<meta name="description" content="{{ page.summary | default: site.description }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.summary | default: site.description }}">
+<meta property="og:image" content="{{ site.url }}/assets/logo.png">
+<link rel="icon" href="/assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="top"><a href="/" class="brand"><img src="/assets/logo.svg" alt="" width="36" height="36">consume<span>.ai</span></a><a class="ig" href="{{ site.instagram }}">Instagram ↗</a></header>
+{{ content }}
+<footer><p><span class="pill c">CONSUME</span> worth your time · <span class="pill s">SKIP</span> hype or not ready · <span class="pill n">SNACK</span> fun, not dinner</p><p>Every verdict is tested or sourced. No sponsored picks. <a href="{{ site.instagram }}">@consume.ai</a></p></footer>
+</body>
+</html>

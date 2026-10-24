@@ -1,0 +1,12 @@
+title: consume.ai
+description: Your daily AI diet. We test the AI hype so you don't have to.
+url: https://consumeai.github.io
+instagram: https://www.instagram.com/consume.ai/
+collections:
+  guides:
+    output: true
+    permalink: /:name/
+defaults:
+  - scope: {type: guides}
+    values: {layout: guide}
+exclude: [_templates, README.md]
